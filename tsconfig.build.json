@@ -1,13 +1,17 @@
-// 把 ts 文件 编译为 ES Module 方式
 {
   "compilerOptions": {
-    "outDir": "dist", // 打包位置
-    "module": "esnext", // 输出类型
-    "target": "es5", // 编译后符合审美标准
-    "declaration": true, // 为ts文件生成 .d.ts文件, 供外部ts项目用
+    "outDir": "dist",
+    // esnext 是标准的 es module 格式
+    "module": "esnext",
+    // 编译后符合什么es版本
+    "target": "es5",
+    // 为每个ts文件 生成一个对应的 .d.ts 文件; 获得 ts 提示
+    "declaration": true,
     "jsx": "react",
-    "moduleResolution":"Node", // 相对路径 node环境下是在nodemudules 里面找的  classis 找的方式不一样
-    "allowSyntheticDefaultImports": true, // 支持 default export
+    // classic node 两种选项, node 就会 从nodeModule 里面找对应的模块； classic 会使用绝对路径，导致找不到对应的npm模块
+    "moduleResolution":"Node",
+    // 之前只能import * as React from 'react', 设置成true, 可以用 import React from 'react'
+    "allowSyntheticDefaultImports": true,
   },
   "include": [
     "src"

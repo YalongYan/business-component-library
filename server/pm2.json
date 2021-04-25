@@ -1,0 +1,10 @@
+{
+  "apps": [{
+    "name": "yd-business-library",
+    "script": "./server/server.js",
+    "cwd": "",
+    "exec_mode": "cluster",
+    "instances": 1,
+    "autorestart": true
+  }]
+}

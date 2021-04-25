@@ -1,14 +1,13 @@
 import React, { FC, useState, useEffect, useRef } from 'react';
 import useClickOutside from './hook/useClickOutside'
 
-import './index.scss'
-
 interface itemProps {
   key: string,
   value: string,
 }
 
 interface mainProps {
+  /** 样式 */
   style?: React.CSSProperties,
   placeholder?: string,
   /** 下拉选项的数据 */
@@ -21,6 +20,13 @@ interface mainProps {
   onChange?: Function,
 }
 
+/**
+ * 
+ * ### 样式的引入按照如下 
+ * ~~~js
+ * import 'yd-business-library/dist/styles/spSelect.css'
+ * ~~~
+ */
 export const SpSelect: FC<mainProps> = (props) => {
   const {
     style, placeholder, listData = [],
