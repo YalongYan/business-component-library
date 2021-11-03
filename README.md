@@ -18,6 +18,7 @@
 
 ### 机器上启动静态 storyBook 站点
   - git pull 拉取代码
+  - npm run build
   - npm run server
 
 ### 服务端口号
