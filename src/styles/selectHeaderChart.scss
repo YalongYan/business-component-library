@@ -1,0 +1,24 @@
+.chartCtn {
+  background: white;
+  margin-top: 20px;
+  padding: 20px;
+  .title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  .titleList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    .item {
+      display: inline-block;
+      cursor: pointer;
+      margin-right: 20px;
+    }
+    .active {
+      color: #0052fe;
+    }
+  }
+}

@@ -20,7 +20,8 @@
   - git pull 拉取代码
   - npm run server
 
-
+### 服务端口号
+    5750
 
 ### 主要文件目录如下
     |_ _ _  .storybook // storybook 相关配置
@@ -78,12 +79,14 @@
 8. gulp.file.js 是编译src/styles 下的scss文件
 9. tsconfig.build 是编译src下ts文件
 
+### 注意事项
+1. 想要展示注释，storiesOf 的名称 必须跟组件 名称是一样的
+
 ### 组件库亮点
 1. 技术栈统一，使用react hook + typescript 跟日常开发技术栈是一样的，最快可以把项目中封装好的代码移植过来用
 2. 通过 storybook 自动生成文档，包括
 属性文档，组件展示，代码展示，在线调试
 3. 最小依赖， 每个组件都是独立的， 通过treeshaking， 不会导致主体项目代码体积庞大， 只会导入使用到的组件代码
-
 
 
 ### 相关链接
