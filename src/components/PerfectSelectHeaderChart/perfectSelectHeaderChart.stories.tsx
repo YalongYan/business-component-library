@@ -99,6 +99,6 @@ const perfectComponent = () => (
   />
 )
 
-storiesOf('PerfectSelectHeaderChart Component', module)
+storiesOf('PerfectSelectHeaderChart', module)
   .add('PerfectSelectHeaderChart', defaultComponent)
   .add('没有Target_Format_Map的状态', perfectComponent);

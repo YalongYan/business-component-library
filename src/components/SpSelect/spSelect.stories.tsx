@@ -19,5 +19,5 @@ const defaultSpSelect = () => (
   <SpSelect value="测试初始值" listData={listData} handleActivitySelected = {action('触发change')}></SpSelect>
 )
 
-storiesOf('SpSelect Component', module)
+storiesOf('SpSelect', module)
   .add('SpSelect', defaultSpSelect)

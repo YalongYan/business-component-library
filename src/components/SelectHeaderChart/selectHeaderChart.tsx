@@ -19,7 +19,7 @@ interface propsType {
  * ~~~
  */
 
-export const SelectHeaderChart: FC<propsType> =((props) => {
+export const SelectHeaderChart: FC<propsType> = (props) => {
   const { titleConfig, title, data } = props;
   const [currentType, setCurrentType] = useState<string>('');
   const [aliasValue, setAliasValue] = useState<string>('');
@@ -63,6 +63,6 @@ export const SelectHeaderChart: FC<propsType> =((props) => {
       </Chart>
     </div>
   );
-});
+};
 
 export default SelectHeaderChart;

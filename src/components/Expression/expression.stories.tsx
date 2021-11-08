@@ -61,7 +61,7 @@ const disableExpression = () => (
   />
 )
 
-storiesOf('Expression Component', module)
+storiesOf('Expression', module)
   .add('Expression', defaultExpression)
   .add('有初始值状态', havedValueExpression)
   .add('不可编辑状态', disableExpression)

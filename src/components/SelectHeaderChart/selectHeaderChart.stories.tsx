@@ -76,5 +76,5 @@ const defaultComponent = () => (
   />
 )
 
-storiesOf('SelectHeaderChart Component', module)
+storiesOf('SelectHeaderChart', module)
   .add('SelectHeaderChart', defaultComponent);
