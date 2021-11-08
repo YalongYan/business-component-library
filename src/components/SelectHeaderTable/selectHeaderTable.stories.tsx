@@ -86,7 +86,7 @@ const columnsData = [
 ];
 
 const handleAdChange = () => {
-  console.log('test')
+  console.log('这里是发送请求的 来更新 tableData')
 }
 
 const defaultComponent = () => (

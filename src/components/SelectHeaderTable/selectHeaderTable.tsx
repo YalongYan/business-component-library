@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { Select, Table } from 'antd';
 const { Option } = Select;
 
@@ -7,14 +7,14 @@ interface idNameType {
   name: string;
 }
 
-interface propType {
+interface taleProps {
   /** 入口选择的下拉数据 */
   enterDataArr: idNameType[];
   /** 表格的数据 */
   tableData: any[];
   /** 表格的头 */
   tableColumns: any[];
-  /** 标题 */
+  /** 标题,就是现在的<点位指标> */
   title: string;
   /** 副标题 现在是<入口选择> */
   subTitle: string;
@@ -22,7 +22,7 @@ interface propType {
   handleSelectChange: (v: string) => void;
 }
 
-const SelectHeaderTable: React.FC<propType> = (props) => {
+export const SelectHeaderTable: FC<taleProps> = (props) => {
   const { enterDataArr, tableData, tableColumns, title, subTitle, handleSelectChange } = props;
 
   const handleChange = (v: string) => {
@@ -30,7 +30,14 @@ const SelectHeaderTable: React.FC<propType> = (props) => {
   };
 
   return (
-    <div className="selectTableContainer">
+    <div
+      className="selectTableContainer"
+      style={{
+        background: 'white',
+        padding: '20px',
+        marginTop: '20px'
+      }}
+    >
       <span className="title"> {title} </span>
       <span style={{ float: 'right' }}>
         <span style={{ marginRight: '10px' }}>{subTitle}</span>
