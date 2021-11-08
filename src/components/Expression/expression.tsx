@@ -2,9 +2,13 @@ import React, { FC, useState, useEffect } from 'react';
 import { 
   message, 
   Select,
-  Icon,
   InputNumber,
 } from 'antd';
+
+import {
+  PlusCircleOutlined,
+  MinusCircleOutlined,
+} from '@ant-design/icons';
 
 import 'antd/dist/antd.css'
 
@@ -210,16 +214,17 @@ export const Expression: FC<expressProps> = (props: expressProps) => {
               </span>
             }
             <span style={{ width: '50px', position: 'absolute', left: list.length > 1 ? '770px' : '600px'}}>
-              {index === list.length -1 &&
-                <Icon
-                  type="plus-circle"
-                  onClick={() => {handleAdd(index)}}
+              {
+                index === list.length -1 &&
+                <PlusCircleOutlined
                   style={{fontSize: '20px', cursor: 'pointer', marginTop: '6px'}}
-                />}
-              <Icon
-                type="minus-circle"
+                  onClick={() => {handleAdd(index)}}
+                />
+              }
+              <MinusCircleOutlined
                 onClick={() => {handleReduce(index)}}
-                style={{fontSize: '20px', float: 'right', cursor: 'pointer', marginTop: '6px'}} />
+                style={{fontSize: '20px', float: 'right', cursor: 'pointer', marginTop: '6px'}}
+              />
             </span>
           </div>
         })
