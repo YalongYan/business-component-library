@@ -1,6 +1,6 @@
 {
   "name": "yd-business-library",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "公共业务组件库",
   "author": "operation fe group",
   "private": false,
@@ -18,7 +18,7 @@
     "React",
     "Common Business"
   ],
-  "homepage": "xxx",
+  "homepage": "https://www.cnblogs.com/yalong/p/14703242.html",
   "files": [
     "dist",
     "README.md"
